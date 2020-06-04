@@ -28,3 +28,4 @@ remove all containers ->
 docker rm $(docker ps -aq) -f
 docker container run -d -p 8080:80 -v /c/Users/lenovo/Desktop/docker/usr/share/nginx/html --name nginx-website
 nginx
+docker image build -t saiashish/nginx-website .
