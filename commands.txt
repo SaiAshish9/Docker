@@ -2,7 +2,16 @@ docker info
 docker ps
 docker -v
 docker
-docker rm -f  <>
+docker rm -f  <container_id>
 docker container run -it -p <--publish> 80:80 nginx
 #images come from docker hub
 # default port =>  192.168.99.100
+docker container ls
+#displays running coontainers
+docker container ls -a
+#shows up all containers
+docker container rm <first_three_characters_of_id>
+docker images
+docker image rm <first_three_characters_of_id>
+docker pull nginx
+docker container  run -d(detached) -p 8080:80 --name mynginx nginx
