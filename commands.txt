@@ -1,0 +1,5 @@
+docker info
+docker ps
+docker -v
+docker
+docker rm -f  <>
