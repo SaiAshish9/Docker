@@ -21,3 +21,6 @@ docker container  run -d(detached) -p 8080:80 --name mynginx nginx
 docker container run -d -p 3306:3306 --name mysql --env MYSQL_ROOT_PASSWORD=123456 mysql
 docker container stop mysql
 docker container exec -it nginx bash
+cd usr/share/nginx/html
+ls
+exit
