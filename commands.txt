@@ -3,3 +3,6 @@ docker ps
 docker -v
 docker
 docker rm -f  <>
+docker container run -it -p <--publish> 80:80 nginx
+#images come from docker hub
+# default port =>  192.168.99.100
