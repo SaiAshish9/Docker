@@ -1,5 +1,6 @@
 docker info
 docker ps
+docker ps -a
 docker -v
 docker
 docker rm -f  <container_id>
@@ -11,7 +12,12 @@ docker container ls
 docker container ls -a
 #shows up all containers
 docker container rm <first_three_characters_of_id>
+docker container rm -f <> 
+#to remove running container
 docker images
 docker image rm <first_three_characters_of_id>
 docker pull nginx
 docker container  run -d(detached) -p 8080:80 --name mynginx nginx
+docker container run -d -p 3306:3306 --name mysql --env MYSQL_ROOT_PASSWORD=123456 mysql
+docker container stop mysql
+docker container exec -it nginx bash
